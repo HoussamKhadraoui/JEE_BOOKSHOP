@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                             http://java.sun.com/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <!-- Servlet Definitions -->
+    <servlet>
+        <servlet-name>bookServlet</servlet-name>
+        <servlet-class>controller.bookServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>clientServlet</servlet-name>
+        <servlet-class>controller.clientServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>stockServlet</servlet-name>
+        <servlet-class>controller.stockServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>locationServlet</servlet-name>
+        <servlet-class>controller.locationServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>bookReservationServlet</servlet-name>
+        <servlet-class>controller.bookReservationServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>penaltyServlet</servlet-name>
+        <servlet-class>controller.penaltyServlet</servlet-class>
+    </servlet>
+
+    <!-- Servlet Mappings -->
+    <servlet-mapping>
+        <servlet-name>bookServlet</servlet-name>
+        <url-pattern>/books</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>clientServlet</servlet-name>
+        <url-pattern>/clients</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>stockServlet</servlet-name>
+        <url-pattern>/stock</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>locationServlet</servlet-name>
+        <url-pattern>/locations</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>bookReservationServlet</servlet-name>
+        <url-pattern>/reservations</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>penaltyServlet</servlet-name>
+        <url-pattern>/penalties</url-pattern>
+    </servlet-mapping>
+
+</web-app>
